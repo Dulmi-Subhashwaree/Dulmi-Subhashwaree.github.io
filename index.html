@@ -8,24 +8,24 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:'Montserrat',sans-serif;background:#1e0a2e;color:#fff;overflow-x:hidden;}
+body{font-family:'Montserrat',sans-serif;background:#020e1f;color:#fff;overflow-x:hidden;}
 
 /* ── DIAMOND GRID BACKGROUND ── */
 .bg-layer{
   position:fixed;inset:0;z-index:0;
   background:
-    repeating-linear-gradient(45deg,rgba(160,100,210,0.07) 0,rgba(160,100,210,0.07) 1px,transparent 1px,transparent 60px),
-    repeating-linear-gradient(-45deg,rgba(160,100,210,0.07) 0,rgba(160,100,210,0.07) 1px,transparent 1px,transparent 60px);
+    repeating-linear-gradient(45deg,rgba(0,160,210,0.07) 0,rgba(0,160,210,0.07) 1px,transparent 1px,transparent 60px),
+    repeating-linear-gradient(-45deg,rgba(0,160,210,0.07) 0,rgba(0,160,210,0.07) 1px,transparent 1px,transparent 60px);
   pointer-events:none;
 }
 /* glowing dots scattered */
 .bg-layer::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 20% 30%,rgba(130,60,200,0.18) 0,transparent 40%),
-             radial-gradient(circle at 80% 70%,rgba(100,40,180,0.12) 0,transparent 35%),
-             radial-gradient(circle at 50% 10%,rgba(150,80,220,0.1) 0,transparent 30%);
+  background:radial-gradient(circle at 20% 30%,rgba(0,120,200,0.18) 0,transparent 40%),
+             radial-gradient(circle at 80% 70%,rgba(0,100,180,0.12) 0,transparent 35%),
+             radial-gradient(circle at 50% 10%,rgba(0,140,210,0.1) 0,transparent 30%);
 }
-.spark{position:fixed;border-radius:50%;background:rgba(200,150,255,0.35);z-index:0;pointer-events:none;animation:sparkfloat 6s ease-in-out infinite;}
+.spark{position:fixed;border-radius:50%;background:rgba(0,180,220,0.35);z-index:0;pointer-events:none;animation:sparkfloat 6s ease-in-out infinite;}
 @keyframes sparkfloat{0%,100%{transform:translateY(0) scale(1);opacity:0.4;}50%{transform:translateY(-15px) scale(1.3);opacity:0.8;}}
 
 /* ── NAVBAR ── */
@@ -33,9 +33,9 @@ nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 60px;
-  background:rgba(20,5,38,0.82);
+  background:rgba(2,14,31,0.88);
   backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(160,100,210,0.12);
+  border-bottom:1px solid rgba(0,150,210,0.12);
 }
 .nav-brand{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#fff;}
 .nav-links{display:flex;gap:44px;list-style:none;}
@@ -48,22 +48,22 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
 /* ── HERO ── */
 #home{
   background:
-    radial-gradient(ellipse at 72% 55%,rgba(120,50,190,0.32) 0,transparent 55%),
-    radial-gradient(ellipse at 15% 85%,rgba(80,20,140,0.22) 0,transparent 45%),
-    linear-gradient(160deg,#2a0d42 0%,#160525 50%,#1a0830 100%);
+    radial-gradient(ellipse at 72% 55%,rgba(0,100,180,0.32) 0,transparent 55%),
+    radial-gradient(ellipse at 15% 85%,rgba(0,70,150,0.22) 0,transparent 45%),
+    linear-gradient(160deg,#021830 0%,#010c1e 50%,#021426 100%);
   overflow:hidden;
 }
 .hero-inner{display:flex;align-items:center;width:100%;gap:0;}
 .hero-text{flex:1;padding:80px 0;}
 .hero-name-1{font-size:clamp(42px,5vw,72px);font-weight:900;line-height:0.95;color:#fff;letter-spacing:-1px;}
-.hero-name-2{font-size:clamp(42px,5vw,72px);font-weight:900;line-height:0.95;color:#c084fc;letter-spacing:-1px;margin-bottom:20px;display:block;}
+.hero-name-2{font-size:clamp(42px,5vw,72px);font-weight:900;line-height:0.95;color:#00d4ff;letter-spacing:-1px;margin-bottom:20px;display:block;}
 .hero-tagline{font-size:15px;font-weight:700;color:#fff;margin-bottom:14px;letter-spacing:0.3px;}
 .hero-desc{font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.75;max-width:460px;font-weight:300;}
 .hero-stats{display:flex;gap:44px;margin:36px 0 36px;}
 .stat-num{font-size:38px;font-weight:800;line-height:1;color:#fff;}
 .stat-lbl{font-size:8.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:5px;line-height:1.4;}
-.btn{display:inline-block;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;padding:14px 30px;border-radius:30px;font-size:13px;font-weight:700;letter-spacing:0.5px;text-decoration:none;cursor:pointer;transition:all 0.3s;box-shadow:0 4px 22px rgba(168,85,247,0.45);}
-.btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(168,85,247,0.65);}
+.btn{display:inline-block;background:linear-gradient(135deg,#0077b6,#00b4d8);color:#fff;padding:14px 30px;border-radius:30px;font-size:13px;font-weight:700;letter-spacing:0.5px;text-decoration:none;cursor:pointer;transition:all 0.3s;box-shadow:0 4px 22px rgba(0,180,220,0.45);}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,180,220,0.65);}
 
 /* hero image - right side */
 .hero-img-wrap{
@@ -75,9 +75,9 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
   position:relative;z-index:2;
   width:330px;height:410px;
   border-radius:28px;
-  border:2px solid rgba(192,132,252,0.6);
+  border:2px solid rgba(0,180,220,0.6);
   background:rgba(200,180,230,0.12);
-  box-shadow:0 0 48px rgba(168,85,247,0.22), inset 0 0 24px rgba(168,85,247,0.06);
+  box-shadow:0 0 48px rgba(0,180,220,0.22), inset 0 0 24px rgba(0,180,220,0.06);
   overflow:hidden;
   display:flex;align-items:center;justify-content:center;
   margin-right:30px;
@@ -92,23 +92,23 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
 /* ── ABOUT ── */
 #about{
   background:
-    radial-gradient(ellipse at 80% 20%,rgba(100,40,170,0.1) 0,transparent 50%),
-    linear-gradient(180deg,#160525 0%,#1e0a2e 100%);
+    radial-gradient(ellipse at 80% 20%,rgba(0,80,150,0.1) 0,transparent 50%),
+    linear-gradient(180deg,#010c1e 0%,#020e1f 100%);
   align-items:center;
 }
 .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;width:100%;padding:120px 0 80px;}
 .about-title{font-size:clamp(42px,5.5vw,78px);font-weight:900;letter-spacing:-1px;line-height:1;margin-bottom:36px;}
-.about-title span{color:#c084fc;}
+.about-title span{color:#00d4ff;}
 .about-p{font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.85;margin-bottom:18px;font-weight:300;}
 .about-p strong{color:#fff;font-weight:700;}
 .sidebar{display:flex;flex-direction:column;gap:18px;}
 .scard{
   background:rgba(255,255,255,0.04);
-  border:1px solid rgba(180,120,240,0.25);
-  border-left:3px solid rgba(180,120,240,0.5);
+  border:1px solid rgba(0,160,210,0.25);
+  border-left:3px solid rgba(0,160,210,0.5);
   border-radius:6px;padding:22px 24px;
 }
-.scard-title{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c084fc;margin-bottom:16px;}
+.scard-title{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#00d4ff;margin-bottom:16px;}
 .edu-row{display:flex;justify-content:space-between;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);}
 .edu-row:last-child{border-bottom:none;padding-bottom:0;}
 .edu-deg{font-size:13px;font-weight:700;color:#fff;line-height:1.3;}
@@ -116,29 +116,29 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
 .edu-yr{font-size:11.5px;color:rgba(255,255,255,0.4);white-space:nowrap;margin-left:16px;flex-shrink:0;}
 .interests-txt{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.8;}
 .open-row{display:flex;gap:16px;}
-.open-pill{border:1px solid rgba(180,120,240,0.3);border-radius:4px;padding:9px 22px;font-size:13px;color:rgba(255,255,255,0.6);}
+.open-pill{border:1px solid rgba(0,160,210,0.3);border-radius:4px;padding:9px 22px;font-size:13px;color:rgba(255,255,255,0.6);}
 
 /* ── SKILLS ── */
 #skills{
   background:
-    radial-gradient(ellipse at 20% 60%,rgba(100,40,170,0.1) 0,transparent 50%),
-    linear-gradient(180deg,#1e0a2e 0%,#160525 100%);
+    radial-gradient(ellipse at 20% 60%,rgba(0,80,150,0.1) 0,transparent 50%),
+    linear-gradient(180deg,#020e1f 0%,#010c1e 100%);
   align-items:center;
 }
 .skills-inner{width:100%;padding:120px 0 80px;}
 .skills-subtitle{font-size:10px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:10px;}
 .skills-title{font-size:clamp(38px,5.5vw,74px);font-weight:900;letter-spacing:-1px;line-height:1.05;margin-bottom:50px;}
-.skills-title .hl{color:#c084fc;}
+.skills-title .hl{color:#00d4ff;}
 .skill-icons{display:flex;gap:18px;margin-bottom:44px;flex-wrap:wrap;justify-content:center;}
 .sicon{
   width:155px;height:155px;
-  background:linear-gradient(145deg,rgba(120,60,190,0.3),rgba(80,30,150,0.5));
-  border:1px solid rgba(160,100,220,0.3);
+  background:linear-gradient(145deg,rgba(0,80,160,0.3),rgba(0,50,120,0.5));
+  border:1px solid rgba(0,160,210,0.3);
   border-radius:18px;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
   transition:all 0.3s;cursor:default;
 }
-.sicon:hover{border-color:rgba(192,132,252,0.7);background:linear-gradient(145deg,rgba(140,70,210,0.4),rgba(100,40,170,0.6));transform:translateY(-4px);box-shadow:0 12px 32px rgba(140,70,210,0.3);}
+.sicon:hover{border-color:rgba(0,200,255,0.7);background:linear-gradient(145deg,rgba(0,100,180,0.4),rgba(0,60,140,0.6));transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,160,220,0.3);}
 .sicon svg{width:52px;height:52px;}
 .sicon-lbl{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.7);text-align:center;line-height:1.4;}
 .skills-tags{font-size:13px;color:rgba(255,255,255,0.5);line-height:2;text-align:center;letter-spacing:0.3px;}
@@ -146,84 +146,85 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
 /* ── PROJECTS ── */
 #projects{
   background:
-    radial-gradient(ellipse at 70% 30%,rgba(100,40,170,0.1) 0,transparent 50%),
-    linear-gradient(180deg,#160525 0%,#1e0a2e 100%);
+    radial-gradient(ellipse at 70% 30%,rgba(0,80,150,0.1) 0,transparent 50%),
+    linear-gradient(180deg,#010c1e 0%,#020e1f 100%);
   align-items:flex-start;
   padding-top:0;padding-bottom:0;
 }
 .proj-inner{width:100%;padding:100px 0 80px;}
-.proj-title{font-size:clamp(32px,4vw,60px);font-weight:900;letter-spacing:-1px;line-height:1.05;margin-bottom:40px;white-space:nowrap;}
-.proj-title .hl{color:#c084fc;}
-
-/* 3 col: left cards | timeline | right cards */
-.proj-timeline-wrap{
-  position:relative;
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  gap:0;
-}
-/* The vertical center line */
-.proj-timeline-wrap::before{
-  content:'';
-  position:absolute;
-  left:50%;
-  top:0;bottom:0;
-  width:1px;
-  background:rgba(180,120,240,0.35);
-  transform:translateX(-50%);
-  z-index:0;
-}
-/* Each project row */
-.proj-row{
-  display:grid;
-  grid-template-columns:1fr 60px 1fr;
-  align-items:center;
-  margin-bottom:36px;
-  position:relative;
-  z-index:1;
-}
-.proj-row:last-child{margin-bottom:0;}
-/* Left slot and right slot */
-.proj-slot-left{padding-right:30px;display:flex;justify-content:flex-end;}
-.proj-slot-right{padding-left:30px;display:flex;justify-content:flex-start;}
-.proj-slot-empty{/* empty side */}
-/* Center dot column */
-.proj-dot-col{
-  display:flex;align-items:center;justify-content:center;
-  position:relative;z-index:2;
-}
-.tl-dot{
-  width:18px;height:18px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg,#a855f7,#7c3aed);
-  box-shadow:0 0 16px rgba(168,85,247,0.55);
-}
-/* Cards */
-.pcard{
-  background:rgba(255,255,255,0.045);
-  border:1px solid rgba(180,120,240,0.2);
-  border-radius:8px;padding:26px 24px;
-  width:100%;max-width:560px;
-  transition:all 0.3s;
-}
-.pcard:hover{background:rgba(180,120,240,0.08);border-color:rgba(180,120,240,0.4);}
-.pcard-title{font-size:14.5px;font-weight:700;color:#c084fc;margin-bottom:10px;line-height:1.35;}
-.pcard-desc{font-size:12.5px;color:rgba(255,255,255,0.6);line-height:1.75;font-weight:300;margin-bottom:16px;}
-.ptags{display:flex;flex-wrap:wrap;gap:8px;}
-.ptag{border:1px solid rgba(255,255,255,0.22);border-radius:20px;padding:4px 14px;font-size:11px;color:rgba(255,255,255,0.6);}
-.pcard.r .ptag{border-color:rgba(180,120,240,0.4);color:rgba(180,120,240,0.9);}
-.pcard.r .pcard-title{color:#c084fc;}
+.proj-header{text-align:center;margin-bottom:20px;}
+.proj-header h2{font-size:clamp(32px,4vw,58px);font-weight:900;letter-spacing:-1px;color:#fff;margin-bottom:14px;}
+.proj-header h2 span{color:#00d4ff;}
+.proj-header p{font-size:14px;color:rgba(255,255,255,0.45);max-width:580px;margin:0 auto 16px;line-height:1.7;font-weight:300;}
+.proj-underline{width:70px;height:3px;background:linear-gradient(90deg,#0077b6,#00d4ff);border-radius:2px;margin:0 auto 44px;}
+/* Filter tabs */
+.filter-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:44px;}
+.tab{padding:9px 22px;border-radius:30px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.5);transition:all 0.25s;font-family:'Montserrat',sans-serif;letter-spacing:0.5px;}
+.tab:hover{border-color:rgba(0,180,220,0.4);color:rgba(255,255,255,0.85);background:rgba(0,180,220,0.07);}
+.tab.active{background:rgba(0,180,220,0.15);border-color:rgba(0,180,220,0.6);color:#00d4ff;}
+/* Grid */
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+/* Card */
+.pcard-new{background:#020e1f;border:1px solid rgba(255,255,255,0.07);border-radius:18px;overflow:hidden;transition:all 0.35s;cursor:default;opacity:0;transform:translateY(28px);animation:cardIn 0.5s ease forwards;}
+.pcard-new.hidden{display:none;}
+.pcard-new:hover{transform:translateY(-6px);border-color:rgba(0,180,220,0.3);box-shadow:0 20px 50px rgba(0,120,200,0.2);}
+@keyframes cardIn{to{opacity:1;transform:translateY(0);}}
+.pcard-new:nth-child(1){animation-delay:0.05s;}
+.pcard-new:nth-child(2){animation-delay:0.12s;}
+.pcard-new:nth-child(3){animation-delay:0.19s;}
+.pcard-new:nth-child(4){animation-delay:0.26s;}
+.pcard-new:nth-child(5){animation-delay:0.33s;}
+.pcard-new:nth-child(6){animation-delay:0.40s;}
+.pcard-new:nth-child(7){animation-delay:0.47s;}
+/* Card image */
+.card-img{width:100%;height:190px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.card-img.tourism{background:linear-gradient(135deg,#1a1a3e 0%,#2d1b69 50%,#0f3460 100%);}
+.card-img.health{background:linear-gradient(135deg,#0f2027 0%,#203a43 50%,#2c5364 100%);}
+.card-img.ukimmig{background:linear-gradient(135deg,#1e3c72 0%,#2a5298 100%);}
+.card-img.food{background:linear-gradient(135deg,#134e5e 0%,#71b280 100%);}
+.card-img.energy{background:linear-gradient(135deg,#373b44 0%,#4286f4 100%);}
+.card-img.maternal{background:linear-gradient(135deg,#4e0a78 0%,#8e2de2 100%);}
+.card-img.aijob{background:linear-gradient(135deg,#0f0c29 0%,#302b63 50%,#24243e 100%);}
+/* Mock dashboard inside card */
+.mock-db{width:82%;height:72%;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;flex-direction:column;overflow:hidden;}
+.mock-tb{height:20px;background:rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;padding:0 8px;gap:4px;flex-shrink:0;}
+.md{width:6px;height:6px;border-radius:50%;}
+.md.r{background:#ff5f57;}.md.y{background:#febc2e;}.md.g{background:#28c840;}
+.mock-bd{flex:1;padding:8px;display:flex;gap:6px;}
+.mock-sb{width:26%;display:flex;flex-direction:column;gap:5px;}
+.ml{height:5px;border-radius:3px;background:rgba(255,255,255,0.14);}
+.ml.s{width:55%;}.ml.a{background:rgba(0,180,220,0.5);}.ml.b{background:rgba(0,180,255,0.4);}.ml.c{background:rgba(34,197,94,0.4);}
+.mock-mn{flex:1;display:flex;flex-direction:column;gap:5px;}
+.mock-ch{flex:1;border-radius:5px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);display:flex;align-items:flex-end;padding:5px;gap:3px;}
+.mb{flex:1;border-radius:2px 2px 0 0;background:rgba(0,180,220,0.4);}
+.mb.p{background:rgba(168,85,247,0.4);}.mb.g{background:rgba(34,197,94,0.4);}.mb.o{background:rgba(251,146,60,0.4);}
+/* Badge */
+.card-badge{position:absolute;top:10px;left:10px;background:rgba(0,0,0,0.5);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:3px 11px;font-size:9.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.75);}
+.card-badge.new{border-color:rgba(0,200,100,0.4);color:#4ade80;}
+.card-badge.feat{border-color:rgba(192,132,252,0.5);color:#c084fc;}
+/* Card icon */
+.card-icon-wrap{display:flex;justify-content:center;margin-top:-22px;position:relative;z-index:2;margin-bottom:14px;}
+.card-icon{width:44px;height:44px;border-radius:50%;background:#020e1f;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;font-size:19px;box-shadow:0 4px 14px rgba(0,0,0,0.4);}
+/* Card body */
+.card-body{padding:0 20px 22px;text-align:center;}
+.card-title{font-size:15.5px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.3;}
+.card-desc{font-size:12.5px;color:rgba(255,255,255,0.42);line-height:1.7;font-weight:300;margin-bottom:16px;}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;}
+.card-tag{padding:4px 12px;border-radius:20px;font-size:10px;font-weight:500;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.48);transition:all 0.2s;}
+.pcard-new:hover .card-tag{border-color:rgba(0,180,220,0.35);color:rgba(0,220,255,0.85);background:rgba(0,180,220,0.06);}
+@media(max-width:1024px){.proj-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:640px){.proj-grid{grid-template-columns:1fr;}}
 
 /* ── CONNECT ── */
 #connect{
   background:
-    radial-gradient(ellipse at 30% 70%,rgba(100,40,170,0.12) 0,transparent 50%),
-    linear-gradient(180deg,#1e0a2e 0%,#160525 100%);
+    radial-gradient(ellipse at 30% 70%,rgba(0,80,150,0.12) 0,transparent 50%),
+    linear-gradient(180deg,#020e1f 0%,#010c1e 100%);
   align-items:center;
 }
 .connect-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;width:100%;padding:120px 0 80px;}
 .connect-title{font-size:clamp(42px,5.5vw,78px);font-weight:900;letter-spacing:-1px;line-height:1;margin-bottom:30px;}
-.connect-title .hl{color:#c084fc;}
+.connect-title .hl{color:#00d4ff;}
 .connect-sub{font-size:15px;font-weight:700;color:#fff;margin-bottom:12px;}
 .connect-desc{font-size:13.5px;color:rgba(255,255,255,0.6);line-height:1.75;font-weight:300;margin-bottom:32px;}
 .contact-list{display:flex;flex-direction:column;gap:20px;}
@@ -231,11 +232,11 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
 .cicon{
   width:40px;height:40px;border-radius:8px;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
-  background:rgba(160,100,220,0.12);border:1px solid rgba(160,100,220,0.3);
+  background:rgba(160,100,220,0.12);border:1px solid rgba(0,160,210,0.3);
 }
 .citem-txt{font-size:13.5px;color:rgba(255,255,255,0.65);}
 .citem-txt a{color:rgba(255,255,255,0.65);text-decoration:none;transition:color 0.2s;}
-.citem-txt a:hover{color:#c084fc;}
+.citem-txt a:hover{color:#00d4ff;}
 
 /* FORM */
 .cform{display:flex;flex-direction:column;gap:18px;}
@@ -243,29 +244,29 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
 .fg label{display:block;font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px;}
 .fg input,.fg select,.fg textarea{
   width:100%;background:rgba(255,255,255,0.04);
-  border:1px solid rgba(160,100,220,0.3);border-radius:6px;
+  border:1px solid rgba(0,160,210,0.3);border-radius:6px;
   padding:12px 15px;color:rgba(255,255,255,0.7);
   font-family:'Montserrat',sans-serif;font-size:13px;outline:none;
   transition:border-color 0.25s,background 0.25s;
 }
 .fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,0.18);}
 .fg input:focus,.fg select:focus,.fg textarea:focus{
-  border-color:rgba(160,100,220,0.7);background:rgba(160,100,220,0.07);}
+  border-color:rgba(0,180,220,0.7);background:rgba(0,180,220,0.07);}
 .fg select{appearance:none;cursor:pointer;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath d='M0 0l5 7 5-7z' fill='%239b59b6'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath d='M0 0l5 7 5-7z' fill='%2300b4d8'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;}
-.fg select option{background:#1e0a2e;}
+.fg select option{background:#020e1f;}
 .fg textarea{resize:vertical;min-height:130px;}
 .send-row{display:flex;align-items:center;gap:14px;}
 .send-btn{
-  background:linear-gradient(135deg,#7c3aed,#a855f7);
+  background:linear-gradient(135deg,#0077b6,#00b4d8);
   color:#fff;border:none;padding:13px 26px;border-radius:30px;
   font-size:13px;font-weight:700;cursor:pointer;
   font-family:'Montserrat',sans-serif;
-  box-shadow:0 4px 18px rgba(168,85,247,0.4);transition:all 0.3s;
+  box-shadow:0 4px 18px rgba(0,180,220,0.4);transition:all 0.3s;
 }
-.send-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(168,85,247,0.6);}
-.send-arrow{color:#a855f7;font-size:20px;}
+.send-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,180,220,0.6);}
+.send-arrow{color:#00d4ff;font-size:20px;}
 
 /* ── SCROLL FADE IN ── */
 .fadein{opacity:0;transform:translateY(24px);transition:opacity 0.55s ease,transform 0.55s ease;}
@@ -456,116 +457,176 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
 ══════════════════════════════════════ -->
 <section id="projects">
   <div class="proj-inner">
-    <div class="proj-title fadein">FEATURED <span class="hl">PROJECTS</span></div>
+    <div class="proj-header">
+      <h2>FEATURED <span>PROJECTS</span></h2>
+      <p>A curated selection of my work across data analytics, machine learning, visualization, and interactive dashboards.</p>
+      <div class="proj-underline"></div>
+    </div>
+    <div class="filter-tabs">
+      <button class="tab active" onclick="filterProjects('all',this)">All Projects</button>
+      <button class="tab" onclick="filterProjects('analytics',this)">Analytics</button>
+      <button class="tab" onclick="filterProjects('ml',this)">Machine Learning</button>
+      <button class="tab" onclick="filterProjects('powerbi',this)">Power BI</button>
+      <button class="tab" onclick="filterProjects('python',this)">Python</button>
+      <button class="tab" onclick="filterProjects('r',this)">R</button>
+    </div>
+    <div class="proj-grid">
 
-    <div class="proj-timeline-wrap">
-
-      <!-- ROW 1: RIGHT — Sri Lanka Tourism -->
-      <div class="proj-row">
-        <div class="proj-slot-left proj-slot-empty"></div>
-        <div class="proj-dot-col"><div class="tl-dot"></div></div>
-        <div class="proj-slot-right">
-          <div class="pcard r fadein">
-            <div class="pcard-title">Sri Lanka Tourism Analysis — 2019 to 2025</div>
-            <div class="pcard-desc">End-to-end project covering 9.2M arrivals from 243 countries across 7 years. Quantified impact of Easter Attacks (–84.7%) and COVID-19 (–73.5%), tracking recovery to a 2025 all-time high of 2.36M arrivals.</div>
-            <div class="ptags">
-              <span class="ptag">Python</span><span class="ptag">Pandas</span><span class="ptag">Power BI</span><span class="ptag">Jupyter</span>
-            </div>
+      <!-- 1. ConvoLog -->
+      <div class="pcard-new" data-tags="ml python">
+        <div class="card-img aijob">
+          <img src="Project_images/Convolog.png" alt="ConvoLog AI Meeting Summariser" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="card-icon-wrap"><div class="card-icon">🎙️</div></div>
+        <div class="card-body">
+          <div class="card-title">ConvoLog — AI Meeting Summariser</div>
+          <div class="card-desc">An AI-powered web app that converts unstructured meeting data into clear structured summaries. Supports text, documents, audio, and images using AI to extract key insights.</div>
+          <div class="card-tags">
+            <span class="card-tag">Python</span><span class="card-tag">Streamlit</span><span class="card-tag">Gemini API</span><span class="card-tag">PyPDF2</span><span class="card-tag">SpeechRecognition</span><span class="card-tag">ReportLab</span>
           </div>
+          
+      <div style="margin-top:14px;">
+        <a href="https://github.com/Dulmi-Subhashwaree/ConvoLog_AI-Meeting-Summarizer" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.65);font-size:11px;font-weight:600;text-decoration:none;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(0,180,220,0.5)';this.style.color='#00d4ff';this.style.background='rgba(0,180,220,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.14)';this.style.color='rgba(255,255,255,0.65)';this.style.background='rgba(255,255,255,0.05)'">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View on GitHub
+        </a>
+      </div>
         </div>
       </div>
 
-      <!-- ROW 2: LEFT — Health Worker -->
-      <div class="proj-row">
-        <div class="proj-slot-left">
-          <div class="pcard fadein">
-            <div class="pcard-title">Health Worker Density Analysis — Australia</div>
-            <div class="pcard-desc">Analyzed geographic distribution of health workers across Australia (2013–2019). Uncovered workforce disparities between urban and remote regions, delivered an interactive Power BI dashboard for health policy decisions.</div>
-            <div class="ptags">
-              <span class="ptag">SQL Server</span><span class="ptag">Power BI</span><span class="ptag">DAX</span><span class="ptag">Excel</span>
-            </div>
-          </div>
+      <!-- 2. Sri Lanka Tourism -->
+      <div class="pcard-new" data-tags="analytics python powerbi">
+        <div class="card-img tourism">
+          <img src="Project_images/Sri_Lanka_Tourism.png" alt="Sri Lanka Tourism Analysis" style="width:100%;height:100%;object-fit:cover;">
         </div>
-        <div class="proj-dot-col"><div class="tl-dot"></div></div>
-        <div class="proj-slot-right proj-slot-empty"></div>
-      </div>
-
-      <!-- ROW 3: RIGHT — UK Immigration -->
-      <div class="proj-row">
-        <div class="proj-slot-left proj-slot-empty"></div>
-        <div class="proj-dot-col"><div class="tl-dot"></div></div>
-        <div class="proj-slot-right">
-          <div class="pcard r fadein">
-            <div class="pcard-title">UK Immigration Trend Analysis: Power BI &amp; Advanced SQL</div>
-            <div class="pcard-desc">Analyzed 15M+ UK visa sponsorship records (2010–2024) using real Home Office data. Built a multi-page Power BI dashboard with T-SQL pipelines and DAX measures for YoY growth and quarterly comparisons.</div>
-            <div class="ptags">
-              <span class="ptag">SQL Server</span><span class="ptag">Power BI</span><span class="ptag">Star Schema</span>
-            </div>
+        <div class="card-icon-wrap"><div class="card-icon">✈️</div></div>
+        <div class="card-body">
+          <div class="card-title">Sri Lanka Tourism Analysis</div>
+          <div class="card-desc">End-to-end analysis of 9.2M arrivals from 243 countries across 7 years, quantifying impact of Easter Attacks (–84.7%) and COVID-19 (–73.5%).</div>
+          <div class="card-tags">
+            <span class="card-tag">Python</span><span class="card-tag">Pandas</span><span class="card-tag">Power BI</span><span class="card-tag">Jupyter</span>
           </div>
+          
+      <div style="margin-top:14px;">
+        <a href="https://github.com/Dulmi-Subhashwaree/Sri-Lanka-Tourism-Trend-Analysis-2019-2025" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.65);font-size:11px;font-weight:600;text-decoration:none;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(0,180,220,0.5)';this.style.color='#00d4ff';this.style.background='rgba(0,180,220,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.14)';this.style.color='rgba(255,255,255,0.65)';this.style.background='rgba(255,255,255,0.05)'">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View on GitHub
+        </a>
+      </div>
         </div>
       </div>
 
-      <!-- ROW 4: LEFT — Food Price -->
-      <div class="proj-row">
-        <div class="proj-slot-left">
-          <div class="pcard fadein">
-            <div class="pcard-title">Food Price Pattern Analysis — Sri Lanka</div>
-            <div class="pcard-desc">Analysed food commodity price trends using ~13,000 records from the World Food Programme. Applied Apriori Association Rule Mining and Logistic Regression, delivered via an interactive R Shiny + Plotly dashboard.</div>
-            <div class="ptags">
-              <span class="ptag">R Shiny</span><span class="ptag">Plotly</span><span class="ptag">arules</span><span class="ptag">tidyverse</span><span class="ptag">GLM</span>
-            </div>
-          </div>
+      <!-- 3. UK Immigration -->
+      <div class="pcard-new" data-tags="analytics powerbi">
+        <div class="card-img ukimmig">
+          <img src="Project_images/UK_Visa.png" alt="UK Immigration Trend Analysis" style="width:100%;height:100%;object-fit:cover;">
         </div>
-        <div class="proj-dot-col"><div class="tl-dot"></div></div>
-        <div class="proj-slot-right proj-slot-empty"></div>
-      </div>
-
-      <!-- ROW 5: RIGHT — Energy Performance -->
-      <div class="proj-row">
-        <div class="proj-slot-left proj-slot-empty"></div>
-        <div class="proj-dot-col"><div class="tl-dot"></div></div>
-        <div class="proj-slot-right">
-          <div class="pcard r fadein">
-            <div class="pcard-title">Energy Performance — Manchester Local Authorities (2014–2024)</div>
-            <div class="pcard-desc">Integrated 326K+ EPC certificates and 1M+ improvement recommendations. Uncovered a 12-point efficiency gap, identified heating as the primary cost driver (avg. £570/yr), and mapped retrofit interventions.</div>
-            <div class="ptags">
-              <span class="ptag">SQL Server</span><span class="ptag">T-SQL</span><span class="ptag">Power BI</span><span class="ptag">Geospatial</span>
-            </div>
+        <div class="card-icon-wrap"><div class="card-icon">🌍</div></div>
+        <div class="card-body">
+          <div class="card-title">UK Immigration Trend Analysis</div>
+          <div class="card-desc">Analyzed 15M+ visa sponsorship records (2010–2024) with T-SQL pipelines and DAX measures for YoY growth and quarterly comparisons.</div>
+          <div class="card-tags">
+            <span class="card-tag">SQL Server</span><span class="card-tag">Power BI</span><span class="card-tag">Star Schema</span>
           </div>
+          
+      <div style="margin-top:14px;">
+        <a href="https://github.com/Dulmi-Subhashwaree/UK-Immigration-Trends-SQL-PowerBI-Analysis" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.65);font-size:11px;font-weight:600;text-decoration:none;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(0,180,220,0.5)';this.style.color='#00d4ff';this.style.background='rgba(0,180,220,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.14)';this.style.color='rgba(255,255,255,0.65)';this.style.background='rgba(255,255,255,0.05)'">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View on GitHub
+        </a>
+      </div>
         </div>
       </div>
 
-      <!-- ROW 6: LEFT — Global Maternal -->
-      <div class="proj-row">
-        <div class="proj-slot-left">
-          <div class="pcard fadein">
-            <div class="pcard-title">Global Maternal Health — Mapping the Path to Safer Motherhood</div>
-            <div class="pcard-desc">Analyzed maternal mortality, skilled birth attendance, and family planning coverage across 190+ countries using WHO datasets. Built a star schema SQL model and Power BI dashboards to highlight disparities worldwide.</div>
-            <div class="ptags">
-              <span class="ptag">SQL Server</span><span class="ptag">Power BI</span><span class="ptag">WHO data</span>
-            </div>
-          </div>
+      <!-- 4. Food Price -->
+      <div class="pcard-new" data-tags="analytics r">
+        <div class="card-img food">
+          <img src="Project_images/SriLanka_FoodPrices.png" alt="Food Price Pattern Analysis" style="width:100%;height:100%;object-fit:cover;">
         </div>
-        <div class="proj-dot-col"><div class="tl-dot"></div></div>
-        <div class="proj-slot-right proj-slot-empty"></div>
-      </div>
-
-      <!-- ROW 7: RIGHT — AI Impact -->
-      <div class="proj-row">
-        <div class="proj-slot-left proj-slot-empty"></div>
-        <div class="proj-dot-col"><div class="tl-dot"></div></div>
-        <div class="proj-slot-right">
-          <div class="pcard r fadein">
-            <div class="pcard-title">AI Impact on Job Market &amp; Automation Risk Analysis</div>
-            <div class="pcard-desc">Analyzed job automation risk and workforce transformation using machine learning on job roles and skill datasets. Built predictive and ensemble models to identify high-risk sectors and emerging AI-driven job trends.</div>
-            <div class="ptags">
-              <span class="ptag">Python</span><span class="ptag">Scikit-learn</span><span class="ptag">NLP</span><span class="ptag">Random Forest</span><span class="ptag">XGBoost</span><span class="ptag">LightGBM</span>
-            </div>
+        <div class="card-icon-wrap"><div class="card-icon">🌾</div></div>
+        <div class="card-body">
+          <div class="card-title">Food Price Pattern Analysis — Sri Lanka</div>
+          <div class="card-desc">Food commodity trends from ~13,000 WFP records using Apriori Association Rule Mining and Logistic Regression via R Shiny dashboard.</div>
+          <div class="card-tags">
+            <span class="card-tag">R Shiny</span><span class="card-tag">Plotly</span><span class="card-tag">arules</span><span class="card-tag">tidyverse</span><span class="card-tag">GLM</span>
           </div>
+          
+      <div style="margin-top:14px;">
+        <a href="https://github.com/Dulmi-Subhashwaree/sri-lanka-food-prices-data-mining" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.65);font-size:11px;font-weight:600;text-decoration:none;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(0,180,220,0.5)';this.style.color='#00d4ff';this.style.background='rgba(0,180,220,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.14)';this.style.color='rgba(255,255,255,0.65)';this.style.background='rgba(255,255,255,0.05)'">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View on GitHub
+        </a>
+      </div>
         </div>
       </div>
 
-    </div><!-- /proj-timeline-wrap -->
+      <!-- 5. Energy Performance -->
+      <div class="pcard-new" data-tags="analytics powerbi">
+        <div class="card-img energy">
+          <img src="Project_images/Manchester_Energy.png" alt="Energy Performance Manchester" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="card-icon-wrap"><div class="card-icon">⚡</div></div>
+        <div class="card-body">
+          <div class="card-title">Energy Performance — Manchester</div>
+          <div class="card-desc">326K+ EPC certificates and 1M+ improvement recommendations, identifying a 12-point efficiency gap and heating as primary cost driver (avg. £570/yr).</div>
+          <div class="card-tags">
+            <span class="card-tag">SQL Server</span><span class="card-tag">T-SQL</span><span class="card-tag">Power BI</span><span class="card-tag">Geospatial</span>
+          </div>
+          
+      <div style="margin-top:14px;">
+        <a href="https://github.com/Dulmi-Subhashwaree/Manchester-epc-energy-analysis" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.65);font-size:11px;font-weight:600;text-decoration:none;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(0,180,220,0.5)';this.style.color='#00d4ff';this.style.background='rgba(0,180,220,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.14)';this.style.color='rgba(255,255,255,0.65)';this.style.background='rgba(255,255,255,0.05)'">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View on GitHub
+        </a>
+      </div>
+        </div>
+      </div>
+
+      <!-- 6. Global Maternal -->
+      <div class="pcard-new" data-tags="analytics powerbi">
+        <div class="card-img maternal">
+          <img src="Project_images/Global_Maternal_health.png" alt="Global Maternal Health" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="card-icon-wrap"><div class="card-icon">🌸</div></div>
+        <div class="card-body">
+          <div class="card-title">Global Maternal Health</div>
+          <div class="card-desc">Maternal mortality and family planning coverage across 190+ countries using WHO datasets with star schema SQL model and Power BI dashboards.</div>
+          <div class="card-tags">
+            <span class="card-tag">SQL Server</span><span class="card-tag">Power BI</span><span class="card-tag">WHO data</span>
+          </div>
+          
+      <div style="margin-top:14px;">
+        <a href="https://github.com/Dulmi-Subhashwaree/SDG3-Maternal-Health-Analytics-SQL-PowerBI" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.65);font-size:11px;font-weight:600;text-decoration:none;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(0,180,220,0.5)';this.style.color='#00d4ff';this.style.background='rgba(0,180,220,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.14)';this.style.color='rgba(255,255,255,0.65)';this.style.background='rgba(255,255,255,0.05)'">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View on GitHub
+        </a>
+      </div>
+        </div>
+      </div>
+
+      <!-- 7. AI Job Market -->
+      <div class="pcard-new" data-tags="ml python">
+        <div class="card-img aijob">
+          <img src="Project_images/Ai impact on Job market.jpg" alt="AI Impact on Job Market" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="card-icon-wrap"><div class="card-icon">🤖</div></div>
+        <div class="card-body">
+          <div class="card-title">AI Impact on Job Market</div>
+          <div class="card-desc">Job automation risk analysis using ensemble ML models to identify high-risk sectors and emerging AI-driven job trends across skill datasets.</div>
+          <div class="card-tags">
+            <span class="card-tag">Python</span><span class="card-tag">Scikit-learn</span><span class="card-tag">NLP</span><span class="card-tag">XGBoost</span><span class="card-tag">LightGBM</span>
+          </div>
+          
+      <div style="margin-top:14px;">
+        <a href="https://github.com/Dulmi-Subhashwaree/ai-job-risk-analysis" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);color:rgba(255,255,255,0.65);font-size:11px;font-weight:600;text-decoration:none;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(0,180,220,0.5)';this.style.color='#00d4ff';this.style.background='rgba(0,180,220,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.14)';this.style.color='rgba(255,255,255,0.65)';this.style.background='rgba(255,255,255,0.05)'">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View on GitHub
+        </a>
+      </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -641,6 +702,23 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
 </section>
 
 <script>
+// ── Project filter ──
+function filterProjects(tag, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.pcard-new').forEach(card => {
+    const tags = card.dataset.tags || '';
+    if (tag === 'all' || tags.includes(tag)) {
+      card.classList.remove('hidden');
+      card.style.animation = 'none';
+      card.offsetHeight;
+      card.style.animation = '';
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+
 // ── Scroll-based nav active state ──
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
