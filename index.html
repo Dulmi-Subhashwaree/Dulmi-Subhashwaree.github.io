@@ -435,6 +435,7 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#connect">Connect</a></li>
   </ul>
 </nav>
@@ -470,7 +471,7 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
       </div>
       <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
         <a href="#projects" class="btn">View My Work</a>
-        <a href="https://github.com/Dulmi-Subhashwaree/Dulmi-Subhashwaree.github.io/blob/main/My_Resume/Dulmi%20Subhashwaree_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+        <a href="https://drive.google.com/file/d/1-8kFv76pgmw0JyVNzSIYvF_jZDA3L38E/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="vertical-align:-2px;margin-right:6px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download CV
         </a>
@@ -909,6 +910,193 @@ section{position:relative;z-index:1;min-height:100vh;display:flex;align-items:ce
     </div>
   </div>
 </section>
+
+<!-- ══════════════════════════════════════
+     EXPERIENCE & LEADERSHIP
+══════════════════════════════════════ -->
+<section id="experience" style="align-items:flex-start;">
+  <div class="exp-inner">
+
+    <div class="exp-header fadein">
+      <div class="skills-subtitle">MY JOURNEY</div>
+      <div class="exp-title">EXPERIENCE &amp; <span class="hl">LEADERSHIP</span></div>
+      <div class="proj-underline" style="margin:16px 0 0;"></div>
+    </div>
+
+    <div class="exp-timeline">
+
+      <!-- vertical line + dots -->
+      <div class="exp-line"></div>
+
+      <!-- Entry 1 -->
+      <div class="exp-entry fadein">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-card-top">
+            <span class="exp-date">2025 — 2026</span>
+          </div>
+          <div class="exp-role">Media Director <span class="exp-dept">(Public Relations)</span></div>
+          <div class="exp-org">AI &amp; Data Science Club &nbsp;·&nbsp; General Sir John Kotelawala Defence University</div>
+          <ul class="exp-bullets">
+            <li>Led media and public relations activities for the AI and Data Science Club at the university.</li>
+            <li>Managed the club's social media platforms and strengthened its online presence.</li>
+            <li>Designed visual materials including flyers and promotional content.</li>
+            <li>Coordinated event promotions and campaigns, demonstrating strong communication and organizational skills.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Entry 2 -->
+      <div class="exp-entry fadein">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-card-top">
+            <span class="exp-date">2024 — 2025</span>
+          </div>
+          <div class="exp-role">General Member</div>
+          <div class="exp-org">Rotaract Club of KDU &nbsp;·&nbsp; General Sir John Kotelawala Defence University</div>
+          <ul class="exp-bullets">
+            <li>Participated in community service projects.</li>
+            <li>Collaborated with club members on various activities.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Entry 3 -->
+      <div class="exp-entry fadein">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-card-top">
+            <span class="exp-date">2025 — Present</span>
+          </div>
+          <div class="exp-role">Freelance Graphic Designer <span class="exp-dept">(Vendor)</span></div>
+          <div class="exp-org">Self-Employed &nbsp;·&nbsp; Remote</div>
+          <ul class="exp-bullets">
+            <li>Designed social media posts, infographic flyers, event flyers, and banners for various clients.</li>
+            <li>Created presentations and short promotional videos tailored to client briefs and brand identity.</li>
+            <li>Applied visual design principles to communicate information clearly and effectively across formats.</li>
+            <li>Managed client briefs, feedback cycles, and delivery deadlines independently as a vendor.</li>
+          </ul>
+          <div class="card-tags" style="margin-top:14px;justify-content:flex-start;">
+            <span class="card-tag">Adobe Photoshop</span>
+            <span class="card-tag">Canva</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* ── EXPERIENCE SECTION ── */
+#experience{
+  background:radial-gradient(ellipse at 60% 40%,rgba(0,80,150,0.05) 0,transparent 50%);
+  padding-top:0;padding-bottom:0;
+}
+.exp-inner{width:100%;padding:100px 0 80px;max-width:860px;}
+.exp-title{
+  font-size:clamp(32px,5vw,62px);
+  font-weight:900;letter-spacing:-1px;line-height:1.05;
+  margin-bottom:0;
+}
+.exp-title .hl{color:#00d4ff;}
+
+/* Timeline layout */
+.exp-timeline{
+  position:relative;
+  margin-top:52px;
+  padding-left:36px;
+  display:flex;flex-direction:column;gap:28px;
+}
+.exp-line{
+  position:absolute;
+  left:7px;top:10px;bottom:10px;
+  width:2px;
+  background:linear-gradient(to bottom,rgba(0,180,220,0.6),rgba(0,180,220,0.1));
+  border-radius:2px;
+}
+.exp-entry{position:relative;}
+.exp-dot{
+  position:absolute;
+  left:-33px;top:22px;
+  width:14px;height:14px;
+  border-radius:50%;
+  background:#020e1f;
+  border:2px solid #00d4ff;
+  box-shadow:0 0 10px rgba(0,180,220,0.6);
+  z-index:2;
+}
+
+/* Card */
+.exp-card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(0,160,210,0.2);
+  border-left:3px solid rgba(0,160,210,0.55);
+  border-radius:12px;
+  padding:24px 28px;
+  transition:border-color 0.3s,background 0.3s;
+}
+.exp-card:hover{
+  background:rgba(0,180,220,0.04);
+  border-color:rgba(0,180,220,0.4);
+  border-left-color:rgba(0,200,255,0.8);
+}
+
+.exp-card-top{
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:12px;
+}
+.exp-badge{
+  font-size:9px;font-weight:700;letter-spacing:2px;
+  padding:3px 10px;border-radius:20px;
+  background:rgba(0,160,210,0.12);
+  border:1px solid rgba(0,160,210,0.4);
+  color:rgba(0,210,255,0.85);
+  text-transform:uppercase;
+}
+.exp-date{
+  font-size:12px;color:rgba(255,255,255,0.38);
+  font-weight:500;letter-spacing:0.5px;
+  font-family:'Montserrat',sans-serif;
+}
+
+.exp-role{
+  font-size:17px;font-weight:800;color:#fff;
+  line-height:1.3;margin-bottom:5px;
+}
+.exp-dept{font-size:14px;font-weight:500;color:rgba(255,255,255,0.5);}
+.exp-org{
+  font-size:11.5px;color:rgba(255,255,255,0.38);
+  letter-spacing:0.5px;margin-bottom:16px;
+  font-family:'Montserrat',sans-serif;
+}
+.exp-bullets{
+  list-style:none;padding:0;margin:0;
+  display:flex;flex-direction:column;gap:7px;
+}
+.exp-bullets li{
+  font-size:13px;color:rgba(255,255,255,0.6);
+  line-height:1.7;font-weight:300;
+  padding-left:16px;position:relative;
+}
+.exp-bullets li::before{
+  content:'';
+  position:absolute;left:0;top:10px;
+  width:5px;height:5px;border-radius:50%;
+  background:rgba(0,180,220,0.7);
+}
+
+/* Mobile */
+@media(max-width:768px){
+  #experience{padding-top:0;padding-bottom:40px;}
+  .exp-inner{padding:80px 0 40px;}
+  .exp-title{font-size:clamp(28px,9vw,44px);}
+  .exp-timeline{padding-left:28px;}
+  .exp-card{padding:18px 18px;}
+  .exp-role{font-size:15px;}
+}
+</style>
 
 <!-- ══════════════════════════════════════
      CONNECT
